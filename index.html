@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<meta name="description" content="Simis">
+<meta name="keywords" content="Simetrias do plano"> 
+<meta name="author" content="www.jhms.com.br hospedagem nacional e desenvolvimento de sites otimizados.">
+
+<link rel="stylesheet" type="text/css" href="css/padrao.css">
+<link rel="stylesheet" href="css/themes/base/jquery.ui.all.css">
+<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.mouse.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.slider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.draggable.min.js"></script>
+	
+	<link rel="Stylesheet" type="text/css" href="css/wColorPicker.1.2.min.css">
+	<script type="text/javascript" src="js/wColorPicker.1.2.min.js"></script>
+	
+	<link rel="Stylesheet" type="text/css" href="css/wPaint.1.3.css">
+	<link rel="Stylesheet" type="text/css" href="css/padrao.css">
+	<script type="text/javascript" src="js/wPaint.1.3.js"></script>
+	<script language='javascript' type='text/javascript' src='js/jquery.tipsy.js'></script>
+
+	<script language="javascript" type="text/javascript" src="js/init.js" ></script>
+
+<title>:: Simis </title>
+</head>
+
+<body>
+
+<div style='width:930px;height:635px;margin:-317px 0 0 -520px;position:absolute;left:50%;top:50%;'>
+
+	<div class='menu' style="left:120px;margin-top:26px;width:120px;height:599px;float:left;background:#efefef;border:1px solid #000;border-right:none;text-align:center;position:relative;">
+                <div style='width:75px;height:20px;margin:0 0 5px 0;background:#fff url(images/function.png) no-repeat 24px 6px;color:#000;padding:7px 0 0 45px;text-align:left;font-size:12px;'>funções</div>
+		<div style='height:10px;text-align:center;font-size:10px;color:#000;margin:5px 0 5px 0;'>Transformações</div>
+		<button class='botao selected' onClick="func(0,this);"> Reflexão</button>
+		<button class='botao' onClick="func(1,this);"> Translação</button>
+		<button class='botao' onClick="func(2,this);"> Rotação</button>
+		<button class='botao' onClick="func(3,this);"> Glisso <br>Reflexão</button>
+
+		<div style='height:10px;text-align:center;font-size:10px;color:#000;margin:20px 0 5px 0;'>Grupos</div>
+		<button class='botao' onClick="func(4,this);"> Roseta</button>
+		<div class='submenu roseta' style='height:18px;'>
+			<input type='checkbox' class='Rreflect tip' title="Reflexão sobre o eixo y" style='float:left;display:block;margin-left:13px;'> <div style='float:left;width:60px;height:15px;margin:2px 0 0 2px;'>Reflexão</div>
+		</div>
+		<button class='botao' onClick="func(5,this);"> Friso</button>
+			<div class='submenu friso' style='height:125px;'>
+				<div style='background-position: 0px 0px;margin-left:5px;' class='selected'></div>
+				<div style='background-position: -30px 0px;'></div>
+				<div style='background-position: -60px 0px;'></div>
+
+				<div style='background-position: 0px -44px;margin-left:5px;'></div>
+				<div style='background-position: -30px -44px;'></div>
+				<div style='background-position: -60px -44px;'></div>
+
+				<div style='background-position: 0px -82px;margin-left:5px;'></div>
+
+			</div>
+		<button class='botao' onClick="func(6,this);"> Papel de<br> parede</button>
+			<div class='submenu wp' style='height:262px;position:relative;z-index:1;'>
+				<div style='background-position: 0px 0px;margin-left:5px;' class='selected'></div>
+				<div style='background-position: -36px 0px;'></div>
+				<div style='background-position: -70px 0px;'></div>
+
+				<div style='background-position: 0px -36px;margin-left:3px;'></div>
+				<div style='background-position: -36px -36px;'></div>
+				<div style='background-position: -70px -36px;'></div>
+
+				<div style='background-position: 0px -79px;margin-left:3px;'></div>
+				<div style='background-position: -36px -79px;'></div>
+				<div style='background-position: -70px -79px;'></div>
+
+				<div style='background-position: 0px -120px;margin-left:3px;'></div>
+				<div style='background-position: -36px -120px;'></div>
+				<div style='background-position: -70px -120px;'></div>
+
+				<div style='background-position: 0px -158px;margin-left:3px;'></div>
+				<div style='background-position: -36px -158px;'></div>
+				<div style='background-position: -68px -158px;'></div>
+
+				<div style='background-position: 0px -196px;margin-left:3px;'></div>
+				<div style='background-position: -36px -196px;'></div>
+				<div style='background-position: -68px -196px;'></div>
+
+			</div>
+
+		<div style="position:absolute;bottom:30px;left:0;width:118px;height:30px;text-align:center;padding:0;margin:0;background:url(images/uem.png) no-repeat center top;z-index:0;"></div>
+		<div style="position:absolute;bottom:3px;left:0;width:118px;height:16px;text-align:center;padding:0;margin:0;font-size:8px;">
+				<div style='width:30px;height:16px;float:left;text-align:left;margin-left:6px' class='browser'></div>
+				<div style='width:75px;height:16px;float:right;text-align:right;margin-right:5px;'></div>
+		</div>
+        </div>
+
+	<div style="width:800px;height:20px;padding:2px 0 4px 0px;float:left;">
+		<div class="alert" style="font-size:12px;margin-top:50px;color:#fff;width:795px;background:green;height:15px;padding:3px;float:left;text-align:center;font-weight:bold;">Simis ::0.3.3</div>
+	</div>
+
+	<div style="width:802px;height:600px;float:left;position:relative;overflow:hidden;background:#F5F5F5;" class='cont'>
+		<div class='point'></div>
+		<div id="slider" class="slider"><div style='color:red;font-size:10px;margin:1px 2px 0 2px;' class='text'>0º</div></div>
+
+		<div class='drag'>
+			<p class='dragtop' style='border:solid black 1px;border-bottom:none;font-size:12px;font-weight:bold;padding:7px 5px 5px 5px;height:16px;background:#cdcdcd;color:#000;width:388px;display:none;z-index:3;margin:-28px 0 0 0;position:absolute;cursor:move;'> Área para desenho <img src='images/help.png' alt="help" height="21px" width="21px" style='margin-top:-4px;vertical-align:middle;float:right;' title="O retângulo vermelho que aparece na tela abaixo, fornece uma área de segurança, ou seja se você desenhar fora desta área a figura que aparece na tela poderá conter sobreposições" class='tip'></p>
+
+			<div id="wPaint" class="wPaint_demobox" style="top:0px;left:0px;position:absolute; width:800px; height:600px; border:solid black 1px; z-index:3;"></div>
+			<div id="wPaint3" class="wPaint_demobox" style="top:0px;left:0px;;position:absolute; width:800px; height:600px; border:solid black 1px; z-index:2;">
+				<canvas id="line" width="800px" height="600px" style="position: absolute; left: 0px; top: 0px">
+			</div>
+		</div>
+
+		<div id="wPaint2" class="wPaint_demobox" style="top:0px;left:0px;position:absolute; width:800px; height:599px; background:#F5F5F5; border:solid black 1px; z-index:1;cursor:default;">
+			<canvas id="wclone" width="800px" height="599px" style="position: absolute; left: 0px; top: 0px">
+		</div>
+		<div class="reta" style='position:absolute;bottom:8px;left:6px;width:300px;height:12px;text-align:left;z-index:1;opacity:0.4;'></div>
+		<div class="func" style='position:absolute;bottom:8px;right:6px;width:300px;height:12px;text-align:right;z-index:1;opacity:0.4;'>Reflexão</div>
+	</div>
+
+<div style='position:absolute;bottom:13px;right:12px;z-index:110;width:796px;height:105px;display:none;' class='myrun'>
+	<textarea id="cnsl" style='width:796px;height:105px;text-align:left;border:none;resize: none;outline-style: none;'>/* Rx(); Ry(); rot(); trans(); zoom(); loop(); draw(); */
+simis.loop();
+simis.Ry().loop("yellow");
+simis.zoom(1/2,2).Ry().loop("green");
+simis.Rx().trans("center").draw("blue",5);
+simis.Rx().rot(60).trans(50,25).loop("red",2);
+</textarea>
+</div>
+</div>
+<!-- buffers -->
+<canvas id="hcanvas" width="200px" height="200px" style='display:none;'>
+<canvas id="hcanvas1" width="200px" height="200px" style='display:none;'>
+<canvas id="hcanvas2" width="200px" height="200px" style='display:none;'>
+<canvas id="hcanvas3" width="200px" height="200px" style='display:none;'>
+
+<iframe style='display:none'></iframe>
+
+</body>
+</html>
+
