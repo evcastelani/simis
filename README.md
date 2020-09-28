@@ -4,7 +4,7 @@ Simis é um programa destinado a visualização de simetrias no plano. Essencial
  colocar algo
 
 
-Para executar o programa basta (clicar aqui).[https://evcastelani.github.io/simis/]
+Para executar o programa basta [clicar aqui](https://evcastelani.github.io/simis/)
 
 # História
 
